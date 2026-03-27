@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://nemo256.github.io/parc_it/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
