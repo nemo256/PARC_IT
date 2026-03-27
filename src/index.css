@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-orange: #FF6600;
+  --brand-orange-dark: #CC5200;
+  --sidebar-width: 260px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FF6600 #1a1a1a;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #FF6600;
+  border-radius: 2px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  background: #0d0d0d;
+  color: #f0f0f0;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm border border-white/10;
+  }
+
+  .btn-danger {
+    @apply bg-red-600/20 hover:bg-red-600/40 text-red-400 font-medium px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm border border-red-600/30;
+  }
+
+  .card {
+    @apply bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-sm;
+  }
+
+  .input-field {
+    @apply w-full bg-white/5 border border-white/15 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-brand-orange/70 focus:ring-1 focus:ring-brand-orange/30 transition-all placeholder:text-white/30;
+  }
+
+  .select-field {
+    @apply w-full bg-[#1a1a1a] border border-white/15 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-brand-orange/70 focus:ring-1 focus:ring-brand-orange/30 transition-all;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-white/50 uppercase tracking-wider mb-1.5;
+  }
+
+  .badge-active {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-400 border border-emerald-500/30;
+  }
+
+  .badge-inactive {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-500/20 text-red-400 border border-red-500/30;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30;
+  }
+
+  .table-row {
+    @apply border-b border-white/5 hover:bg-white/5 transition-colors cursor-pointer;
+  }
+
+  .table-head {
+    @apply text-left text-xs font-semibold uppercase tracking-wider text-white/40 py-3 px-4;
+  }
+
+  .table-cell {
+    @apply py-3 px-4 text-sm;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.25s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
