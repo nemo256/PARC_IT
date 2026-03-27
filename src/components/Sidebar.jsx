@@ -20,7 +20,7 @@ export default function Sidebar({ currentPage, onNavigate, assetCount, userCount
       <div className="px-6 py-5 border-b border-white/8">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 bg-brand-orange rounded-lg flex items-center justify-center flex-shrink-0">
-            <Cpu size={18} className="text-white" />
+            <Cpu size={32} className="text-white" />
           </div>
           <div>
             <div className="text-white font-bold text-base tracking-tight leading-none">PARC IT</div>
@@ -33,7 +33,7 @@ export default function Sidebar({ currentPage, onNavigate, assetCount, userCount
       <div className="px-6 py-4 border-b border-white/8">
         <div className="w-full h-10 flex items-center justify-center opacity-60 hover:opacity-90 transition-opacity">
           <img
-            src="/sonatrach.png"
+            src="/sonatrachh.png"
             alt="Sonatrach"
             className="h-8 w-auto object-contain"
             onError={(e) => {
@@ -45,20 +45,6 @@ export default function Sidebar({ currentPage, onNavigate, assetCount, userCount
             <div className="w-2 h-2 bg-brand-orange rounded-full"></div>
             <span className="text-white/60 text-xs font-semibold tracking-wider">SONATRACH</span>
             <div className="w-2 h-2 bg-brand-orange rounded-full"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats mini */}
-      <div className="px-6 py-3 border-b border-white/8">
-        <div className="grid grid-cols-2 gap-2">
-          <div className="bg-white/5 rounded-lg p-2.5 text-center">
-            <div className="text-brand-orange font-bold text-lg leading-none">{assetCount}</div>
-            <div className="text-white/40 text-[10px] mt-1">Équipements</div>
-          </div>
-          <div className="bg-white/5 rounded-lg p-2.5 text-center">
-            <div className="text-brand-orange font-bold text-lg leading-none">{userCount}</div>
-            <div className="text-white/40 text-[10px] mt-1">Utilisateurs</div>
           </div>
         </div>
       </div>
@@ -90,7 +76,7 @@ export default function Sidebar({ currentPage, onNavigate, assetCount, userCount
       {/* Footer */}
       <div className="px-6 py-4 border-t border-white/8">
         <div className="text-[10px] text-white/25 text-center">
-          PARC IT v1.0 — © 2024 Sonatrach
+          PARC IT v1.0 — © 2026 Sonatrach
         </div>
       </div>
     </aside>
