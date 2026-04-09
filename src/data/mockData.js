@@ -31,7 +31,7 @@ export const INITIAL_USERS = [
   { id: 'u-5', nom: 'Aouadi', prenom: 'Rachid', email: 'r.aouadi@sonatrach.dz', role: 'Manager', department: 'Ressources Humaines', actif: false, dateCreation: '2022-08-22' },
   { id: 'u-6', nom: 'Cherif', prenom: 'Nadia', email: 'n.cherif@sonatrach.dz', role: 'Technicien', department: 'Région Alger', actif: true, dateCreation: '2023-09-01' },
   { id: 'u-7', nom: 'Larbi', prenom: 'Omar', email: 'o.larbi@sonatrach.dz', role: 'Admin', department: 'APS', actif: true, dateCreation: '2023-02-14' },
-  { id: 'u-8', nom: 'Saadi', prenom: 'Houria', email: 'h.saadi@sonatrach.dz', role: 'Technicien', department: 'Hygiène et Sécurité', actif: true, dateCreation: '2024-01-08' },
+  { id: 'u-8', nom: 'Saadi', prenom: 'Houria', email: 'h.saadi@sonatrach.dz', role: 'Technicien', department: 'Hygiène et Sécurité', actif: true, dateCreation: '2026-01-08' },
 ];
 
 export const INITIAL_ASSETS = [
@@ -117,12 +117,12 @@ export const INITIAL_ASSETS = [
   },
   {
     id: 'ast-9', nom: 'LPT-APS-001', categoryId: 'cat-2', department: 'APS',
-    userId: 'u-7', statut: 'Actif', dateAcquisition: '2024-01-15',
+    userId: 'u-7', statut: 'Actif', dateAcquisition: '2026-01-15',
     cpu: 'Intel Core i7-1355U', ram: '16 Go', disque: '512 Go SSD',
     os: 'Windows 11 Pro', osVersion: '23H2',
     antivirus: 'Bitdefender GravityZone', antivirusVersion: '7.8',
     applications: ['Microsoft Office 365', 'Chrome', 'Teams'],
-    marque: 'Lenovo', modele: 'ThinkPad L14 Gen 4', serialNumber: 'SN-LN-009-2024',
+    marque: 'Lenovo', modele: 'ThinkPad L14 Gen 4', serialNumber: 'SN-LN-009-2026',
     adresseIP: '192.168.5.20', adresseMAC: '00:9I:AJ:BK:CL:DM', notes: ''
   },
   {
@@ -158,7 +158,7 @@ export const INITIAL_ASSETS = [
 ];
 
 export const INITIAL_TICKETS = [
-  { id: 'tkt-1', titre: 'Panne PC Bureau - Finance', assetId: 'ast-3', userId: 'u-4', technicienId: 'u-2', priorite: 'Haute', statut: 'Ouvert', dateCreation: '2024-03-15', description: 'Imprimante ne répond plus au réseau', categorie: 'Matériel' },
-  { id: 'tkt-2', titre: 'Installation logiciel comptabilité', assetId: 'ast-10', userId: null, technicienId: 'u-2', priorite: 'Moyenne', statut: 'En cours', dateCreation: '2024-03-18', description: 'Besoin d\'installer Sage 100 sur le PC', categorie: 'Logiciel' },
-  { id: 'tkt-3', titre: 'Mise à jour antivirus RH', assetId: 'ast-4', userId: 'u-5', technicienId: null, priorite: 'Basse', statut: 'Résolu', dateCreation: '2024-03-10', description: 'Antivirus expiré, renouveler la licence', categorie: 'Sécurité' },
+  { id: 'tkt-1', titre: 'Panne PC Bureau - Finance', assetId: 'ast-3', userId: 'u-4', technicienId: 'u-2', priorite: 'Haute', statut: 'Ouvert', dateCreation: '2026-03-15', description: 'Imprimante ne répond plus au réseau', categorie: 'Matériel' },
+  { id: 'tkt-2', titre: 'Installation logiciel comptabilité', assetId: 'ast-10', userId: null, technicienId: 'u-2', priorite: 'Moyenne', statut: 'En cours', dateCreation: '2026-03-18', description: 'Besoin d\'installer Sage 100 sur le PC', categorie: 'Logiciel' },
+  { id: 'tkt-3', titre: 'Mise à jour antivirus RH', assetId: 'ast-4', userId: 'u-5', technicienId: null, priorite: 'Basse', statut: 'Résolu', dateCreation: '2026-03-10', description: 'Antivirus expiré, renouveler la licence', categorie: 'Sécurité' },
 ];

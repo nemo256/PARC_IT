@@ -5,7 +5,6 @@ import Inventory from './pages/Inventory';
 import Users from './pages/Users';
 import Categories from './pages/Categories';
 import Tickets from './pages/Tickets';
-import Settings from './pages/Settings';
 import { useStore } from './hooks/useStore';
 
 export default function App() {
@@ -63,16 +62,6 @@ export default function App() {
             onAdd={store.addCategory}
             onUpdate={store.updateCategory}
             onDelete={store.deleteCategory}
-          />
-        );
-      case 'settings':
-        return (
-          <Settings
-            assets={store.assets}
-            users={store.users}
-            categories={store.categories}
-            tickets={store.tickets}
-            onReset={store.resetData}
           />
         );
       default:

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  LayoutDashboard, Package, Users, Tag, Settings,
+  LayoutDashboard, Package, Users, Tag,
   Ticket, ChevronRight, Cpu
 } from 'lucide-react';
 
@@ -10,7 +10,6 @@ const navItems = [
   { id: 'tickets', label: 'Helpdesk', icon: Ticket },
   { id: 'users', label: 'Utilisateurs', icon: Users },
   { id: 'categories', label: 'Catégories', icon: Tag },
-  { id: 'settings', label: 'Paramètres', icon: Settings },
 ];
 
 export default function Sidebar({ currentPage, onNavigate, assetCount, userCount }) {
